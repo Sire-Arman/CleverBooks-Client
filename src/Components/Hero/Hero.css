@@ -1,0 +1,7 @@
+.nav-dropdown-toggle.navbar-dropdown:hover
+  > .nav-link.only-dropdown-arrow.product
+  > .nav-link-dropdown {
+  color: #fc907e;
+  transition: all;
+  transition-duration: 0.3s;
+}

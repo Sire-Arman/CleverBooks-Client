@@ -1,0 +1,168 @@
+
+[minus-btn], [plus-btn]{
+    user-select: none;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #FC907E;
+}
+.slick-dots li button:before{font-size:8px;}
+
+/* Animated Type */
+.text-style-gradient {
+  display: inline-block;
+  background-image: linear-gradient(125deg, #9f6eed, #fc907e, #9f6eed, #fc907e) !important;
+  background-size: 200% !important;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: Gradient 10s ease infinite !important;
+  -moz-animation: Gradient 10s ease infinite !important;
+  animation: Gradient 10s ease infinite !important;
+}
+
+/* Animation Keyframes */
+@-webkit-keyframes Gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes Gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes Gradient { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.gradient-bg-anim {
+    background: linear-gradient(114deg, #9f6eed, #fc907e, #9f6eed, #fc907e);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.slick-dots li{
+margin: 0 1px !important;
+}
+.b-white:after {
+  background: white;
+}
+.b-dark:after {
+  background: #151218;
+}
+
+/*GRADIENTS*/
+  .b-white, .b-white:before {
+    background: rgba(252,144,126,1);
+    background: -moz-linear-gradient(145deg, rgba(252,144,126,1) 0%, rgba(159,110,237,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(252,144,126,1)), color-stop(100%, rgba(159,110,237,1)));
+    background: -webkit-linear-gradient(145deg, rgba(252,144,126,1) 0%, rgba(159,110,237,1) 100%);
+    background: -o-linear-gradient(145deg, rgba(252,144,126,1) 0%, rgba(159,110,237,1) 100%);
+    background: -ms-linear-gradient(145deg, rgba(252,144,126,1) 0%, rgba(159,110,237,1) 100%);
+    background: linear-gradient(145deg, rgba(252,144,126,1) 0%, rgba(159,110,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc907e', endColorstr='#9f6eed', GradientType=1 );
+  }
+  .b-dark, .b-dark:before {
+    background: rgba(252,144,126,1);
+    background: -moz-linear-gradient(145deg, rgba(252,144,126,1) 0%, rgba(159,110,237,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(252,144,126,1)), color-stop(100%, rgba(159,110,237,1)));
+    background: -webkit-linear-gradient(145deg, rgba(252,144,126,1) 0%, rgba(159,110,237,1) 100%);
+    background: -o-linear-gradient(145deg, rgba(252,144,126,1) 0%, rgba(159,110,237,1) 100%);
+    background: -ms-linear-gradient(145deg, rgba(252,144,126,1) 0%, rgba(159,110,237,1) 100%);
+    background: linear-gradient(145deg, rgba(252,144,126,1) 0%, rgba(159,110,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc907e', endColorstr='#9f6eed', GradientType=1 );
+  }
+/*END GRADIENTS*/
+/*BASE BUTTON*/
+.btn-secondory {
+  display: inline-block;
+  position: relative;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.8s;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn-secondory:hover {
+  text-shadow: 0px 0px 0px rgba(255, 255, 255, 1);
+}
+.btn-secondory:hover:after {
+  left: 100%;
+  top: 100%;
+  bottom: 100%;
+  right: 100%;
+}
+.btn-secondory:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 30px;
+  transition: all .5s;
+}
+.btn-secondory.no-border-bg:before {
+  content: none;
+}
+.b-dark.no-border-bg:after {
+     background: transparent; 
+}
+.btn-secondory:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  bottom: 2px;
+  right: 2px;
+  z-index: -1;
+  border-radius: 30px;
+  transition: all .5s;
+}
+.text-btn-secondory {
+    padding: 12px 0px;
+    transition: all 0.8s;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-btn-secondory:hover {
+    text-shadow: none;
+}
+.text-btn-secondory:hover .right-arrow-svg {
+    left: 5px;
+}
+.text-btn-secondory:before, .text-btn-secondory:before {
+    content: none;
+}
+
+
+/*blogs image zoom effect*/
+img.cs-list-image {
+    transition: scale .2s;
+    scale: 102%;
+}
+.cs-list-wrapper>.w-dyn-item:hover .cs-list-image {
+    scale: 110%;
+}
+@media (max-width: 280px) {
+  .get-crest-popUp{padding-top: 150px !important;}
+}
+   
